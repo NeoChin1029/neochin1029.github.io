@@ -1,0 +1,218 @@
+/*common.css*/
+*{
+	box-sizing:border-box;
+}
+
+body{
+	background: #fafafa;
+	margin:0;
+	font:17px/1.7 arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+    color: #555;
+}
+
+img{
+	border: none;	
+					
+}
+
+a{
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content: " ";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+.clearfix{
+	*zoom:1;
+}
+
+/* welcome.css */
+
+.welcome .header{
+	background: rgba(0,0,0,.5);
+}
+
+
+.banner-page{
+	background: url("./image/Blade_of_dorin.jpg");
+	height: 450px;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.tagline{
+	margin-top: 350px;
+	margin-bottom: 10px;
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	font-weight: normal;	
+}
+
+.post-list-wrapper{
+	padding: 70px 0;
+	background: #ebeced;
+
+}
+.post{
+	float: left;
+	background: #fff;
+	width: 290px;
+	height: 420px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 30px;
+	border-radius:5px;
+	box-shadow: 0 2px 1px rgba(0,0,0,.08);
+	/* 专门为date设置的aralative*/
+	position: relative;
+}
+.thumbnail-image{
+	display: block;
+	position: relative;
+}
+.thumbnail-image:before{
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 290px;
+	background: #000;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	/*透明度*/
+	opacity: 0;
+	/* 添加过度效果 */
+	transition: opacity 1s;
+}
+.thumbnail-image:hover:before{
+	opacity: 0.6;
+}
+.post .thumbnail{
+	width: 290px;
+	height: 290px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.post .post-info{
+	margin: 24px;
+}
+.post-info{
+	color: #000;
+}
+.post-info :hover{
+	color: #b5b9bd;
+}
+.post h3{
+	font-size: 18px;
+	line-height: 1.6;
+}
+.post .date{
+	position: absolute;
+	left: 24px;
+	bottom:10px;
+	font-size: 15px;
+	color: #b5b9bd;
+}
+/* layout.css*/
+
+.header{
+	position:fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	background: #2C130D;
+	height: 55px;
+}
+
+.header .nav{
+	margin: 0;
+	padding: 0;
+	float: left;
+	margin-top: 12px;
+}
+.header .nav li{	
+	list-style:none;
+	float: left;
+	margin-right: 7px;
+}
+
+.header .nav li a{
+	color: #fff;
+	font-size: 15px;
+	padding: 8px 5px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+
+.header .nav li a:hover{
+	border: 1px solid rgba(255,255,255,.2);
+}
+
+.header .nav li.current a{
+	background: rgba(255,255,255,.2);
+	border: 1px solid transparent;
+}
+
+.header .logo{
+	display: block;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	/* 整体居中 */
+	position: fixed;
+	left: 50%;
+	margin-left: -30px;
+  margin-top: 8px;
+
+	/* 字体剧中 */
+	color: #fff;
+	font-size: 25px;
+	line-height: 60px;
+	text-align: center;
+	/* 颜色样式部分 */
+	background: #874624;
+	box-shadow: 0 8px 8px rgba(0,0,0,0.1);
+	/* transition 效果*/
+	transition: top .2% ease-out,box-shadow .2% ease-out;
+}
+
+.header .logo:hover{
+	top:14px;
+	box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+}
+
+/* blog.css */
+.blog-wrapper{
+	width: 960px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.4);
+	background: #fff;
+	margin: 68px auto;
+	padding: 30px;
+}
+
+.post-title{
+	font-weight: normal;
+	color: #eb3170;
+	text-align: center;
+	margin: 5px 0;
+}
+
+.post-img{
+	max-width: 100%;
+	display: block;
+	margin: 30px auto;
+}
