@@ -24,7 +24,7 @@ img{
 
 a{
 	text-decoration: none;
-	transition: all 0.3s;
+	transition: all 0.5s;
 }
 
 .container{
@@ -193,7 +193,7 @@ a{
 	background: #874624;
 	box-shadow: 0 8px 8px rgba(0,0,0,0.1);
 	/* transition 效果*/
-	transition: top .2s ease-out,box-shadow .2s ease-out;
+	transition: top .5s ease-out,box-shadow .5s ease-out;
 }
 
 .header .logo:hover{
