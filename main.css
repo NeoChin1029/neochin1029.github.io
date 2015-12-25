@@ -193,7 +193,7 @@ a{
 	background: #874624;
 	box-shadow: 0 8px 8px rgba(0,0,0,0.1);
 	/* transition 效果*/
-	transition: top .2% ease-out,box-shadow .2% ease-out;
+	transition: top .2s ease-out,box-shadow .2s ease-out;
 }
 
 .header .logo:hover{
